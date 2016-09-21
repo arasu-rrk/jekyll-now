@@ -1,17 +1,30 @@
----
-layout: default
----
+{% include header.html %}
+<div class="help-content">
+	<div class="left-toc">
+		<div class="left-toc-content">
+			<ul class="treeview"></ul>
+		</div>
+	</div>
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
+{% capture documentation %}{{page.documentation | downcase}}{% endcapture %}
+	{% if documentation == "api"%}		
+		<div class="api"></div>
+	{% endif %}
+	<div class="post">		
+		{% if documentation == "ug"%}	
+			<div id="rightsidetoc"></div>
+		{% endif %}
 
-  <div class="entry">
-    {{ content }}
-  </div>
+		<div class="post-content">
+		{{ content }}
+		</div>
+		
+		{% include footer.html %}
+	
+</div>
+</div>
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
+<div id="back-top" title="Back to Top"><i class="fa fa-angle-up"></i></div>	
 
-  {% include disqus.html %}
-</article>
+</body>
+</html>
