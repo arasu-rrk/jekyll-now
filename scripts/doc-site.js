@@ -141,13 +141,6 @@ if($(window).width()>767)
     });
 	}
 
-	if (getCookie('_uid') != '') {
-		uid = getCookie('_uid');
-	} else {
-		uuid = Math.floor(Math.random() * 1000) + 1 + timeEST.toString();
-		createCookie('_uid', uuid);
-	}
-
 
 // Mobile View Right TOC
 	

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+	<base>{{ site.baseurl }}</base>
     <title>{{ page.title }}</title>
 	<meta name="description" content="{{ page.description }}"/>
 	<meta name="keywords" content="{{ page.keywords }}"/>
@@ -53,20 +54,15 @@ $(document).ready(function() {
 								$.ajax({
 									type: 'get',  		
 									{% if page.lang && page.lang != 'en-us' %}
-										url: '{{toc}}_{{page.lang}}.json',		
+										url: '{{toc}}_{{page.lang}}.html',		
 									{% else %}
-										url: '{{toc}}_en-us.json',
+										url: '{{toc}}_en-us.html',
 									{% endif %}		
-									dataType: 'json',	
+									dataType: 'html',	
 									success: function(data) {
 												$(".left-toc").css("background-image", "none");	
 												var dataManger = data;  
-												$(".treeview").ejTreeView(
-												{  	
-													create: "onCreate", 
-													fields: { id: "id", parentId: "pid", text: "name", hasChild: "hasChild", dataSource: dataManger}
-												}
-												);
+												$(".treeview").html(data).ejTreeView();
 											}
 									});
 					{% endfor %}
@@ -101,7 +97,7 @@ $(document).ready(function() {
 	    <div class="js-doc">
 			{% capture platformName %}{{page.platform | downcase}}{% endcapture %}
 			{% if platformName == "report-server" %}
-				{% capture breadcrumbPlatformName %}{{"Report Server"}} {% endcapture %}
+				{% capture breadcrumbPlatformName %}{{"Report Platform "}} {% endcapture %}
 				<span>{{ breadcrumbPlatformName }}</span>
 			{% endif %}
 			{% if platformName == "dashboard-platform" %}
@@ -146,7 +142,7 @@ $(document).ready(function() {
 			<div class="lang-area">
 				<select id="site-language">
 					{% for lang in site.data.languages %}
-						<option value="{{lang.shortname}}">{{lang.displayname}}</option>		
+						<option value="/{{lang.shortname}}">{{lang.displayname}}</option>		
 					{% endfor %}
 				</select>
 			</div>

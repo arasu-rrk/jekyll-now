@@ -12,7 +12,7 @@ The Syncfusion Dashboard Platform is an end-to-end solution for creating, managi
 
 ## Key features
 
-**Wide variety of Data Sources** --- All the commonly used data sources including Microsoft Excel, CSV, Microsoft SQL Server and JSON or server based data sources like SQL Server, SQLite, ODBC Connection (MySQL, Oracle and Access), Microsoft Azure Table Storage, Salesforce and Spark SQL, or RESTful web services through Web Data Source are supported.
+**Wide variety of Data Sources** --- All the commonly used data sources including Microsoft Excel, CSV and JSON or server based data sources like Microsoft SQL Server, Microsoft SQL Server Analysis Services (SSAS), PostgreSQL, SQLite, ODBC Connection (SQL Server, MySQL, Oracle and Access), Microsoft Azure Table Storage, Salesforce, Hive and Spark SQL, or RESTful web services through Web Data Source are supported.
 
 **Powerful ETL** --- Seamless integration with the Syncfusion Big Data platform provides access to the most versatile ETL tools available.
 
