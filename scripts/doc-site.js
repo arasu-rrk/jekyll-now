@@ -181,63 +181,63 @@ if ($(window).width() < 767) {
 
 
 // left tree view on click
-$(document).on("click", ".left-toc-content a", function(event) {
-    var isHashattribute = false;
-    var currenturl = $(this).attr("href");
+// $(document).on("click", ".left-toc-content a", function(event) {
+    // var isHashattribute = false;
+    // var currenturl = $(this).attr("href");
 	
-    event.preventDefault();
-    if (currenturl != "" && currenturl != undefined) {
-        $("ul li a").removeClass("node-selected");
-        $(this).addClass("node-selected");
-        if (!(currenturl.indexOf('#') === -1)) {
-            isHashattribute = true;
-            if (selectedNodeUrl != "" && selectedNodeUrl != undefined) {
-                selectedNodeUrl = !(selectedNodeUrl.indexOf('#') === -1) >= 0 ? selectedNodeUrl.split('#')[0] : selectedNodeUrl;
-            }
-            currenturl = currenturl.split('#')[0];
-            if (currenturl == selectedNodeUrl) {
-                var hashid = $(this).attr("href").split('#')[1].replace(":", "\\:");
-                $("body,html").scrollTop(($("#" + hashid).offset().top) - 120);
-                onNodeSelect($(this).closest('.e-item'));
-                history.pushState({}, '', $(this).attr("href"));
-                return false;
-            }
-        }
-    }
-    var selectedUrl = $(this).attr("href");
-    selectedNodeUrl = $(this).attr("href");
-    var hashUrl = $(this).attr("href");
-    if (selectedNodeUrl != "" && selectedNodeUrl != undefined) {
-        $(".post").html("").css('background', 'url(' + "//cdn.syncfusion.com/documentation/images/left-toc-waiting.gif" + ') no-repeat scroll center center');
+    // event.preventDefault();
+    // if (currenturl != "" && currenturl != undefined) {
+        // $("ul li a").removeClass("node-selected");
+        // $(this).addClass("node-selected");
+        // if (!(currenturl.indexOf('#') === -1)) {
+            // isHashattribute = true;
+            // if (selectedNodeUrl != "" && selectedNodeUrl != undefined) {
+                // selectedNodeUrl = !(selectedNodeUrl.indexOf('#') === -1) >= 0 ? selectedNodeUrl.split('#')[0] : selectedNodeUrl;
+            // }
+            // currenturl = currenturl.split('#')[0];
+            // if (currenturl == selectedNodeUrl) {
+                // var hashid = $(this).attr("href").split('#')[1].replace(":", "\\:");
+                // $("body,html").scrollTop(($("#" + hashid).offset().top) - 120);
+                // onNodeSelect($(this).closest('.e-item'));
+                // history.pushState({}, '', $(this).attr("href"));
+                // return false;
+            // }
+        // }
+    // }
+    // var selectedUrl = $(this).attr("href");
+    // selectedNodeUrl = $(this).attr("href");
+    // var hashUrl = $(this).attr("href");
+    // if (selectedNodeUrl != "" && selectedNodeUrl != undefined) {
+        // $(".post").html("").css('background', 'url(' + "//cdn.syncfusion.com/documentation/images/left-toc-waiting.gif" + ') no-repeat scroll center center');
 		
-        $.ajax({
-            type: "get",
-            url: "//" + window.location.host + selectedNodeUrl,
-            success: function(result) {
-                $('.post').html($(result).find('.post').html()).css('background', 'none');
-                $("#breadcrumb").html($(result).find('#breadcrumb').html());
-                $('#rightsidetoc').toc();
-                $('#rightsidetoc').toc({
-                    noBackToTopLinks: true
-                });
-                $('#rightsidetoc').toc({
-                    listType: 'ol'
-                });
-                $("#rightsidetoc ul:first").attr("id", "righttree");
-                $('#rightsidetoc ol').length ? $("#rightsidetoc").css("display", "block") : $("#rightsidetoc").css("display", "none");
-                $('#rightsidetoc ol').length ? $(".right-toc-icon").css("display", "block") : $(".right-toc-icon").css("display", "none");
-                document.title = $(result).filter('title').text();
-                onload();
-            },
-            complete: function() {
-                scrollTopElement();
-            }
-        });
-        history.pushState({}, '', selectedNodeUrl);
-    }
-    onNodeSelect($(this).closest('.e-item'));
+        // $.ajax({
+            // type: "get",
+            // url: "//" + window.location.host + selectedNodeUrl,
+            // success: function(result) {
+                // $('.post').html($(result).find('.post').html()).css('background', 'none');
+                // $("#breadcrumb").html($(result).find('#breadcrumb').html());
+                // $('#rightsidetoc').toc();
+                // $('#rightsidetoc').toc({
+                    // noBackToTopLinks: true
+                // });
+                // $('#rightsidetoc').toc({
+                    // listType: 'ol'
+                // });
+                // $("#rightsidetoc ul:first").attr("id", "righttree");
+                // $('#rightsidetoc ol').length ? $("#rightsidetoc").css("display", "block") : $("#rightsidetoc").css("display", "none");
+                // $('#rightsidetoc ol').length ? $(".right-toc-icon").css("display", "block") : $(".right-toc-icon").css("display", "none");
+                // document.title = $(result).filter('title').text();
+                // onload();
+            // },
+            // complete: function() {
+                // scrollTopElement();
+            // }
+        // });
+        // history.pushState({}, '', selectedNodeUrl);
+    // }
+    // onNodeSelect($(this).closest('.e-item'));
 
-});
+// });
 
 // on browser back
 window.onpopstate = function(event) {
