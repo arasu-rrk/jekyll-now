@@ -211,7 +211,7 @@ $(document).on("click", ".left-toc-content a", function(event) {
         $('.post').html("");
         $('.post').css('background', 'url(' + "//cdn.syncfusion.com/documentation/images/left-toc-waiting.gif" + ') no-repeat scroll center center');
 		
-		var contentPath = "//" + $("body").data("baseurl") + selectedNodeUrl;
+		var contentPath = "//" + window.location.host + $("body").data("baseurl") + selectedNodeUrl;
 		
         $.ajax({
             type: "get",
