@@ -209,9 +209,9 @@ $(document).on("click", ".left-toc-content a", function(event) {
     var hashUrl = $(this).attr("href");
     if (selectedNodeUrl != "" && selectedNodeUrl != undefined) {
         $('.post').html("");
-        $('.post').css('background', 'url(' + "http://cdn.syncfusion.com/documentation/images/left-toc-waiting.gif" + ') no-repeat scroll center center');
+        $('.post').css('background', 'url(' + "//cdn.syncfusion.com/documentation/images/left-toc-waiting.gif" + ') no-repeat scroll center center');
 		
-		var contentPath = window.location.origin + $("body").data("baseurl") + selectedNodeUrl;
+		var contentPath = "//" + $("body").data("baseurl") + selectedNodeUrl;
 		
         $.ajax({
             type: "get",
