@@ -54,9 +54,9 @@ $(document).ready(function() {
 								$.ajax({
 									type: 'get',  		
 									{% if page.lang && page.lang != 'en-us' %}
-										url: '{{toc}}_{{page.lang}}.html',		
+										url: '{{page.lang}}/{{toc}}.html',		
 									{% else %}
-										url: '{{toc}}_en-us.html',
+										url: 'en-us/{{toc}}.html',
 									{% endif %}		
 									dataType: 'html',	
 									success: function(data) {
@@ -142,7 +142,7 @@ $(document).ready(function() {
 			<div class="lang-area">
 				<select id="site-language">
 					{% for lang in site.data.languages %}
-						<option value="/{{lang.shortname}}">{{lang.displayname}}</option>		
+						<option value="{{site.baseurl}}/{{lang.shortname}}">{{lang.displayname}}</option>		
 					{% endfor %}
 				</select>
 			</div>
