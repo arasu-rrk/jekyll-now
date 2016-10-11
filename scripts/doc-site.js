@@ -213,7 +213,7 @@ $(document).on("click", ".left-toc-content a", function(event) {
 		
         $.ajax({
             type: "get",
-            url: $("body").data("baseurl").replace("http:", "https:") + selectedNodeUrl,
+            url: window.location.origin + $("body").data("baseurl") + selectedNodeUrl,
             success: function(result) {
                 $('.post').css('background', 'none');
                 $('.post').html($(result).find('.post').html());
