@@ -40,7 +40,7 @@ documentation: ug
 
    Include the following code under constructor method of `App.xaml` class file so it will execute before initializing the ChromiumWebBrowser control.
   
-   {% tabs %}
+   
    {% highlight c# %}
    var settings = new CefSettings();
    settings.PackLoadingDisabled = true;
@@ -69,7 +69,7 @@ documentation: ug
 	  End If
    End If
    {% endhighlight %}
-   {% endtabs %}
+   
 	 
    Initialize ChromiumWebBrowser control in MainWindow XAML file through including the following template within `Grid` element block.
   
@@ -81,7 +81,7 @@ documentation: ug
 
    Create a class named `DashboardProperties` with the following code.
    
-   {% tabs %}
+   
    {% highlight c# %}
    public class DashboardProperties
    {
@@ -109,11 +109,11 @@ documentation: ug
 		Public Property ServiceUrl() As String
    End Class
    {% endhighlight %}
-   {% endtabs %}
+   
    
    Create a class named `DashboardViewer` with the following code.
    
-   {% tabs %}
+   
    {% highlight c# %}
    public class DashboardViewer
    {
@@ -541,10 +541,10 @@ documentation: ug
 		End Function
    End Class
    {% endhighlight %}
-   {% endtabs %}
+   
    
    Add a class named `DashboardServicePreviewSettings` with the following code.
-   {% tabs %} 
+    
    {% highlight c# %}
    public class DashboardServicePreviewSettings
    {
@@ -565,11 +565,11 @@ documentation: ug
 		End Sub
    End Class
    {% endhighlight %}
-   {% endtabs %}
+   
    
    Add a class named `DashboardServiceSerialization` with the following code to serialize and deserialize the DashboardService URL when Dashboard Service is running in IIS Express. 	 
    
-   {% tabs %} 
+    
    {% highlight c# %}
    public class DashboardServiceSerialization
    {
@@ -633,14 +633,14 @@ documentation: ug
 		End Function
 	End Class
    {% endhighlight %}
-   {% endtabs %}	  		
+   	  		
 
 
 ## URL Generation and Binding
 
    Include the following code under `MainWindow` class.
   
-   {% tabs %}
+   
    {% highlight c# %}
    private string _sydxFileName = "WorldWideCarSalesDashboard.sydx";
 	 
@@ -678,18 +678,18 @@ documentation: ug
 	  End If
    End Sub
    {% endhighlight %}
-   {% endtabs %}
+   
    
    Add the following method call after `InitializeComponent` method call in constructor method.   
    
-   {% tabs %}
+   
    {% highlight c# %}
    Navigate();
    {% endhighlight %}
    {% highlight vb %}
    Navigate()
    {% endhighlight %}
-   {% endtabs %}
+   
    
    Build the application and run it to view the dashboard.
   

@@ -102,7 +102,7 @@ documentation: ug
    
    Replace all the codes present in this class with the below one.
    
-   {% tabs %}
+   
    {% highlight c# %}
    public class DashboardPathController : ApiController
    {
@@ -135,7 +135,7 @@ documentation: ug
 	 End Function
    End Class
    {% endhighlight %}
-   {% endtabs %}
+   
    
    Now, the file will look like below.
    
@@ -148,7 +148,7 @@ documentation: ug
 
  Create a class `DashboardViewer` inside the `Models` folder with the following code.  
  
-  {% tabs %}
+  
   {% highlight c# %}
    
 
@@ -344,7 +344,7 @@ documentation: ug
 		End Function
 	End Class
    {% endhighlight %}
-   {% endtabs %}
+   
   Now the file look like below
   ![](images/models.png) 
    
@@ -354,7 +354,7 @@ documentation: ug
    
    Add the following code under `Application_Start` method:
 
-   {% tabs %}
+   
    {% highlight c# %}
    RouteTable.Routes.MapHttpRoute(
        name: "DefaultApi",
@@ -368,11 +368,11 @@ documentation: ug
         routeTemplate:="Api/{controller}/{id}",
         defaults:=New With {Key .id = System.Web.Http.RouteParameter.Optional})
    {% endhighlight %}
-   {% endtabs %}
+   
    
    Add the following namespace declarations.
 
-   {% tabs %}
+   
    {% highlight c# %}
    using System.Web.Routing;
    using System.Web.Http;
@@ -381,7 +381,7 @@ documentation: ug
    Imports System.Web.Routing
    Imports System.Web.Http
    {% endhighlight %}
-   {% endtabs %}
+   
    
    Now, the file will look like below.
    

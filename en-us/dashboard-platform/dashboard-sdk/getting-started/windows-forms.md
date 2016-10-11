@@ -40,7 +40,7 @@ documentation: ug
 
    Include the following code under `Main` method of `Program` class so that it will execute before initializing the ChromiumWebBrowser control.
   
-   {% tabs %}
+   
    {% highlight c# %}
    var settings = new CefSettings();
    settings.PackLoadingDisabled = true;
@@ -61,11 +61,11 @@ documentation: ug
 	  End If
    End If
    {% endhighlight %}
-   {% endtabs %} 
+    
    
    Include the following code under the `Form1` class that you will launch with dashboard from Main method.
 	 
-   {% tabs %} 
+    
    {% highlight c# %}
    private string _sydxFileName = "WorldWideCarSalesDashboard.sydx";
 	 
@@ -115,11 +115,11 @@ documentation: ug
 	  End If
    End Function
    {% endhighlight %}
-   {% endtabs %} 
+    
 	 
    Replace the following code with the existing code under constructor of `Form1` class.
   
-   {% tabs %}
+   
    {% highlight c# %}
    if(GenerateUrl())
 	  InitializeComponent();
@@ -133,11 +133,11 @@ documentation: ug
 	  Environment.Exit(0)
    End If
    {% endhighlight %}
-   {% endtabs %}
+   
 
    Create a class named `DashboardProperties` with the following code.
    
-   {% tabs %}
+   
    {% highlight c# %}
    public class DashboardProperties
    {
@@ -165,11 +165,11 @@ documentation: ug
 		Public Property ServiceUrl() As String
    End Class
    {% endhighlight %}
-   {% endtabs %}
+   
    
    Create a class named `DashboardViewer` with the following code.
    
-   {% tabs %}
+   
    {% highlight c# %}
    public class DashboardViewer
    {
@@ -593,10 +593,10 @@ documentation: ug
 		End Function
 	End Class
    {% endhighlight %}
-   {% endtabs %}
+   
      
    Add a class named `DashboardServicePreviewSettings` with the following code.
-   {% tabs %}
+   
    {% highlight c# %}
    public class DashboardServicePreviewSettings
    {
@@ -617,11 +617,11 @@ documentation: ug
 		End Sub
    End Class
    {% endhighlight %}
-   {% endtabs %}
+   
    
    Add a class named `DashboardServiceSerialization` to serialize and deserialize the DashboardService URL when Dashboard Service is running in IIS Express.
    
-   {% tabs %}
+   
    {% highlight c# %}
    public class DashboardServiceSerialization
    {
@@ -684,36 +684,36 @@ documentation: ug
 		End Function
    End Class
    {% endhighlight %}
-   {% endtabs %}
+   
    
    
 ## Control Initialization and URL Binding
 
    Declare a variable `WindowBrowser` of type `ChromiumWebBrowser` under `Form1` class.
   
-   {% tabs %}
+   
    {% highlight c# %}
    private CefSharp.WinForms.ChromiumWebBrowser WindowBrowser;
    {% endhighlight %}
    {% highlight vb %}
    Private WindowBrowser As CefSharp.WinForms.ChromiumWebBrowser
    {% endhighlight %}
-   {% endtabs %}
+   
 	  
    Initialize the created instance of ChromiumWebBrowser control in the `InitializeComponent` method passing the generated URL through the following code.
       
-   {% tabs %}
+   
    {% highlight c# %}
    this.WindowBrowser = new CefSharp.WinForms.ChromiumWebBrowser(Url);
    {% endhighlight %}
    {% highlight vb %}
    Me.WindowBrowser = New CefSharp.WinForms.ChromiumWebBrowser(Url)
    {% endhighlight %}
-   {% endtabs %}
+   
 	    
    Add the following code after the InitializeComponent method call in `Form1` class constructor.
       
-   {% tabs %}
+   
    {% highlight c# %}
    this.WindowBrowser.Name = "WindowBrowser";
    this.WindowBrowser.Dock = DockStyle.Fill;
@@ -728,7 +728,7 @@ documentation: ug
    Me.WindowState = FormWindowState.Maximized
    Me.Controls.Add(Me.WindowBrowser)
    {% endhighlight %}
-   {% endtabs %}
+   
 				
    Build the application and run to view the dashboard.
 		

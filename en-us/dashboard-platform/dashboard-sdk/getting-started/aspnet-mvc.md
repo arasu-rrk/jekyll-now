@@ -28,7 +28,7 @@ documentation: ug
    
    Create a model class `DashboardViewer` with the following code.
    
-   {% tabs %}
+   
    {% highlight c# %}
    using System;
    using System.IO;
@@ -235,11 +235,11 @@ documentation: ug
 	End Class
     End Namespace
    {% endhighlight %}
-   {% endtabs %}
+   
    
    Add a class `DashboardServicePreviewSettings` with the following code.
    
-   {% tabs %}
+   
    {% highlight c# %}
    using System;
    using System.Collections.Generic;
@@ -264,11 +264,11 @@ documentation: ug
 		End Sub
    End Class
    {% endhighlight %}
-   {% endtabs %}
+   
 	
    Add a model class `DashboardServiceSerialization` to serialize and deserialize the DashboardService URL when Dashboard Service is running in IIS Express.
    
-   {% tabs %}
+   
    {% highlight c# %}
    using System;
    using System.IO;
@@ -337,11 +337,11 @@ documentation: ug
 		End Function
    End Class
    {% endhighlight %}
-   {% endtabs %}
+   
    
    Create a controller class `DashboardViewerController` and set the report path and service URL using the following code.
 	 
-   {% tabs %}
+   
    {% highlight c# %}
    using System;
    using System.Web.Mvc;
@@ -369,7 +369,7 @@ documentation: ug
 	 End Function
    End Class
    {% endhighlight %}
-   {% endtabs %}
+   
    
    Add a Razor view (`Index.cshtml` file) with the following template included.
   

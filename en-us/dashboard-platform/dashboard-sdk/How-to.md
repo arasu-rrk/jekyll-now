@@ -156,7 +156,7 @@ Return the HTML string to generate a page with it and retrieve its URL path to n
 
 Following code illustrates the same.
    
-	 {% tabs %}
+	 
 	 {% highlight c# %}
      private string GetViewer(DashboardProperties dashboardProperties)
      {
@@ -208,7 +208,7 @@ Following code illustrates the same.
 		 Return sb.ToString() 
      End Function
 	 {% endhighlight %}
-	 {% endtabs %}
+	 
         
 **After dashboard loading**
      
@@ -220,7 +220,7 @@ Return the HTML string to generate a page with it and retrieve its URL path to n
 
 Following code illustrates the same.
 
-	 {% tabs %}
+	 
 	 {% highlight c# %}
      private string GetViewer(DashboardProperties dashboardProperties)
      {
@@ -266,7 +266,7 @@ Following code illustrates the same.
 		Return sb.ToString()
      End Function
 	 {% endhighlight %}
-	 {% endtabs %}
+	 
 
 ### Change data connection string in dashboard at runtime for LightSwitch HTML Application
 

@@ -28,7 +28,7 @@ documentation: ug
 
    Create a Web Form named as `Default` and add the following template.
      
-   {% tabs %}
+   
    {% highlight aspx-cs %}
    <%@ Page Title="WebApplication1" Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WebApplication1.Default" %>
    <!DOCTYPE html> 
@@ -86,13 +86,13 @@ documentation: ug
 	 </head>
    </html>
    {% endhighlight %}
-   {% endtabs %}
+   
 	 
 ## Control Initialization
 
    Initialize Dashboard Viewer with the following script under `body` tag (after closing `head` tag) in the same file.
     
-   {% tabs %} 
+    
    {% highlight aspx-cs %}
    <div id="dashboard" style="width:100%; height:100%;" ></div>
 	 <script type="text/javascript">
@@ -117,11 +117,11 @@ documentation: ug
         });
       </script>
    {% endhighlight %}
-   {% endtabs %}
+   
    
    Create a class named `DashboardViewer` with the following code.
   
-   {% tabs %}
+   
    {% highlight c# %}
    using System;
    using System.IO;
@@ -325,11 +325,11 @@ documentation: ug
 		End Function
    End Class
    {% endhighlight %}
-   {% endtabs %}
+   
    
    Add a class named `DashboardServicePreviewSettings` with the following code.
    
-   {% tabs %}
+   
    {% highlight c# %}
    using System;
    using System.Collections.Generic;
@@ -354,11 +354,11 @@ documentation: ug
 		End Sub
    End Class
    {% endhighlight %}
-   {% endtabs %}
+   
    
    Add a class named `DashboardServiceSerialization` to serialize and deserialize the DashboardService URL when Dashboard Service is running in IIS Express. 
    
-   {% tabs %}
+   
    {% highlight c# %}
    using System;
    using System.IO;
@@ -427,7 +427,7 @@ documentation: ug
 		End Function
    End Class
    {% endhighlight %}
-   {% endtabs %}
+   
    
 ## Dashboard and Service Binding
 
@@ -435,7 +435,7 @@ documentation: ug
     
    Define the properties with public access level for handling dashboard path and service URL through the following code definitions under `Global` class in `Global.asax` file.
    
-   {% tabs %}
+   
    {% highlight c# %}
    public static string ReportPath;
    public static string Url;
@@ -444,11 +444,11 @@ documentation: ug
    Public Shared ReportPath As String
    Public Shared Url As String
    {% endhighlight %}
-   {% endtabs %}
+   
    
    Set the dashboard path and service URL using the following code under `Application_Start` method in `Global.asax` file.
 	 
-   {% tabs %}
+   
    {% highlight c# %}
       ReportPath = AppDomain.CurrentDomain.BaseDirectory.Replace("\\", "\\\\") + "bin\\\\WorldWideCarSalesDashboard.sydx";
       DashboardViewer dashboardViewer = new DashboardViewer();
@@ -459,7 +459,7 @@ documentation: ug
 	  Dim dashboardViewer As New DashboardViewer()
 	  Url = dashboardViewer.ServiceUrl
    {% endhighlight %}
-   {% endtabs %}
+   
 	 
    Build and run the application to view the dashboard.
   
