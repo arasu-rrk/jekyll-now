@@ -68,7 +68,7 @@ $(document).ready(function() {
 												for(var i = 0; i < toc.length; i++){
 													var href = $(toc[i]).attr("href");
 													
-													if($(toc[i]).hasAttr("href"))
+													if(toc[i].attributes.getNamedItem("href") !== null)
 														$(toc[i]).attr("href", $("body").data("baseurl") + $(toc[i]).attr("href"));
 												}
 												
