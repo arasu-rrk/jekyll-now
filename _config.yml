@@ -74,6 +74,7 @@ sass:
 
 # Use the following plug-ins
 gems:
+  - kramdown
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - nokogiri
   - syncfusion-tabs
