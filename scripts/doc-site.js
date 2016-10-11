@@ -29,6 +29,8 @@ function premalink() {
 function onCreate(args) {
     var lastSegment = window.location.pathname;
 
+	lastSegment = lastSegment.substring(0, lastSegment.length - 1);
+	
     var hashUrl = location.hash;
     if (!(lastSegment.indexOf('api') === -1) && hashUrl != "" && hashUrl != undefined) {
         lastSegment = lastSegment + hashUrl;
@@ -182,15 +184,7 @@ if ($(window).width() < 767) {
 $(document).on("click", ".left-toc-content a", function(event) {
     var isHashattribute = false;
     var currenturl = $(this).attr("href");
-	currenturl = $("body").data("baseurl") + currenturl.substring(0, currenturl.length - 1);
-    if (currenturl != null && !(currenturl.indexOf('/cr/') === -1)) {
-        currenturl = currenturl.substring(0, currenturl.length - 1);
-        $.load(currenturl)
-    }
-    if (currenturl != null && !(currenturl.indexOf('/file-formats/') === -1) && (location.pathname.split("/")[1]) != "file-formats") {
-        window.open(currenturl, '_blank');
-        return false;
-    }
+	
     event.preventDefault();
     if (currenturl != "" && currenturl != undefined) {
         $("ul li a").removeClass("node-selected");
@@ -217,11 +211,9 @@ $(document).on("click", ".left-toc-content a", function(event) {
         $('.post').html("");
         $('.post').css('background', 'url(' + "http://cdn.syncfusion.com/documentation/images/left-toc-waiting.gif" + ') no-repeat scroll center center');
 		
-		selectedNodeUrl = selectedNodeUrl.substring(0, selectedNodeUrl.length - 1);
-		
         $.ajax({
             type: 'get',
-            url: $("body").data("baseurl") + selectedNodeUrl + ".html",
+            url: $("body").data("baseurl") + selectedNodeUrl,
             success: function(result) {
                 $('.post').css('background', 'none');
                 $('.post').html($(result).find('.post').html());
@@ -251,8 +243,7 @@ $(document).on("click", ".left-toc-content a", function(event) {
 
 // on browser back
 window.onpopstate = function(event) {
-    var url = window.location.pathname;
-	url = url.substring(0, url.length - 1)  + window.location.hash;
+    var url = window.location.pathname + window.location.hash;
     event.preventDefault();
     if ((url.indexOf('#') === -1) || !(url.indexOf('api') === -1)) {
         $("ul li a").removeClass("node-selected");
