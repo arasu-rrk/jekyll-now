@@ -66,7 +66,9 @@ $(document).ready(function() {
 												var toc = $("li[role=treeitem]").find("a");
 												
 												for(var i = 0; i < toc.length; i++){
-													$(toc[i]).attr("href", $("body").data("baseurl") + $(toc[i]).attr("href"));
+													var href = $(toc[i]).attr("href");
+													
+														$(toc[i]).attr("href", $("body").data("baseurl") + $(toc[i]).attr("href"));
 												}
 												
 												var linkObject = null
