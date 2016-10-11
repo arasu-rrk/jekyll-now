@@ -63,6 +63,12 @@ $(document).ready(function() {
 												var dataManger = data;  
 												$(".treeview").html(data).ejTreeView();
 												
+												var toc = $("li[role=treeitem]").find("a");
+												
+												for(var i = 0; i < toc.length; i++){
+													$(toc[i]).attr("href", $("body").data("baseurl") + $(toc[i]).attr("href"));
+												}
+												
 												var linkObject = null
 												if(window.location.pathname.split('/')[2]!="api"){
 													linkObject = getObjects(data,'linkAttribute',window.location.pathname);

@@ -208,14 +208,11 @@ $(document).on("click", ".left-toc-content a", function(event) {
     selectedNodeUrl = $(this).attr("href");
     var hashUrl = $(this).attr("href");
     if (selectedNodeUrl != "" && selectedNodeUrl != undefined) {
-        $('.post').html("");
-        $('.post').css('background', 'url(' + "//cdn.syncfusion.com/documentation/images/left-toc-waiting.gif" + ') no-repeat scroll center center');
-		
-		var contentPath = "//" + window.location.host + $("body").data("baseurl") + selectedNodeUrl;
+        $(".post").html("");.css('background', 'url(' + "//cdn.syncfusion.com/documentation/images/left-toc-waiting.gif" + ') no-repeat scroll center center');
 		
         $.ajax({
             type: "get",
-            url: contentPath.replace("http:", "https:"),
+            url: selectedNodeUrl,
             success: function(result) {
                 $('.post').css('background', 'none');
                 $('.post').html($(result).find('.post').html());
