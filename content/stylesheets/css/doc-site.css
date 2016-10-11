@@ -1670,170 +1670,10 @@ li[role="presentation"] {
     display: block;
 }
 /* endtab */
-/* Feedback */
-
-.feedback-label {
-    color: #252525;
-    margin-bottom: 2px;
-    font-weight: 400;
-    letter-spacing: 0;
-}
-.notification-text {
-    color: green;
-    font-size: 14px;
-    font-weight: 600;
-    margin-top: 11%;
-}
-.feedback-confirmation {
-    font-size: 13px;
-    line-height: 20px;
-    margin-top: 27px;
-    padding-right: 25px;
-}
-#submitButton {
-    width: 295px;
-    background-color: #09b1cf;
-    color: #fff;
-    height: 35px;
-    font-size: 14px;
-    padding-top: 3px;
-}
-.feedButton {
-    margin-top: 23px;
-    width: 100%;
-}
-#closeNotification {
-    background-color: #09b1cf;
-    color: #fff;
-    margin-top: 28px;
-    width: 90px;
-}
-#feedbackForm #message {
-    height: 95px!important;
-    resize: none;
-}
-#closeicon {
-    background: transparent url(//cdn.syncfusion.com/content/images/common/close-icon2.png) no-repeat scroll -48px -4px;
-    cursor: pointer;
-    float: right;
-    height: 20px;
-    margin-right: 15%;
-    margin-top: -2px;
-    width: 20px;
-}
-#feedbackDescription {
-    color: #454545;
-    font-weight: 400;
-    padding-top: 2px;
-    font-size: 12px;
-    letter-spacing: 0;
-}
-#notification {
-    text-align: center;
-    font-size: 12px!important;
-}
-#feedbackButton {
-    z-index: 2147483647;
-    cursor: pointer;
-    height: 235px;
-}
-#feedbackButton > img {
-    height: 75%;
-}
-#_waiting-popup_ > img {
-    left: 46%!important;
-}
-#feedbacks-dialogue_wrapper {
-    position: fixed!important;
-    background-color: #fff;
-    overflow: hidden;
-    height: 466px;
-    z-index: 2147483647;
-}
-.feedback-fields {
-    padding-top: 9px;
-    color: #000!important;
-    border-radius: 0;
-}
-#feedbackForm {
-    padding-right: 45px;
-    padding-top: 7px;
-}
-#feedbackMessage > textarea {
-    overflow: 0;
-    resize: none;
-}
-.feedback-inputs {
-    height: 32px;
-    border-radius: 0;
-    width: 295px;
-    font-size: 13px;
-}
-#feedbacks-dialogue > #feedback-title {
-    color: #09b1cf;
-    font-size: 19px;
-    padding-top: 11px;
-}
-.e-shadow {
-    box-shadow: none!important;
-}
-#feedbacks-dialogue_wrapper #feedbacks-dialogue {
-    padding-left: 23px;
-    height: 480px!important;
-}
-#feedbacks-dialogue_wrapper #feedbacks-dialogue #button-container {
-    display: table;
-    text-align: center;
-    width: 100%;
-}
 .e-waitpopup-pane .e-image {
     background-image: url(//cdn.syncfusion.com/documentation/images/left-toc-waiting.gif)!important;
 }
-@media only screen and (min-width: 1919px) {
-    #feedbacks-dialogue_wrapper {
-        height: 531px!important;
-    }
-    .feedback-label {
-        font-size: 13px;
-    }
-    .feedback-confirmation {
-        font-size: 13px;
-        margin-top: 33px;
-    }
-    #feedbackButton > img {
-        height: 100%;
-    }
-    #feedbacks-dialogue {
-        padding-left: 26px;
-    }
-    #feedback-title {
-        font-size: 23px!important;
-        padding-top: 16px!important;
-    }
-    #closeicon {
-        margin-right: 10%;
-    }
-    #submitButton {
-        height: 39px;
-        font-size: 17px;
-    }
-    #feedbackForm {
-        padding-top: 10px;
-    }
-    .feedButton {
-        margin-top: 28px;
-    }
-    #feedbackForm #message {
-        height: 115px!important;
-        font-size: 13px!important;
-    }
-    #feedbackDescription {
-        padding-top: 0;
-    }
-    #closeNotification {
-        margin-top: 22px;
-    }
-}
+
 #center {
     height: 100%;
     width: 100%;
@@ -1851,20 +1691,7 @@ li[role="presentation"] {
 #resultlogo {
     margin-top: -48px;
 }
-@media only screen and (max-width: 1024px) {
-    #feedbackButton > img {
-        height: 70%;
-    }
-    .feedback-inputs {
-        width: 100%;
-    }
-    #submitButton {
-        width: 100%;
-    }
-    .feedback-fields {
-        width: 272px;
-    }
-}
+
 /* endFeedback */
 
 /* release notes type dropdown*/
@@ -1886,3 +1713,13 @@ li[role="presentation"] {
 	margin-top:8px;
 }
 /* end release notes type dropdown*/
+
+.release-notes-info{
+	margin-left: 0;
+}
+.release-notes-info .label-primary {
+	margin-right: 10px;
+}
+.release-notes-info .label .fa {
+    padding-right: 5px;
+}
