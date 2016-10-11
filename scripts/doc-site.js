@@ -208,14 +208,13 @@ $(document).on("click", ".left-toc-content a", function(event) {
     selectedNodeUrl = $(this).attr("href");
     var hashUrl = $(this).attr("href");
     if (selectedNodeUrl != "" && selectedNodeUrl != undefined) {
-        $(".post").html("");.css('background', 'url(' + "//cdn.syncfusion.com/documentation/images/left-toc-waiting.gif" + ') no-repeat scroll center center');
+        $(".post").html("").css('background', 'url(' + "//cdn.syncfusion.com/documentation/images/left-toc-waiting.gif" + ') no-repeat scroll center center');
 		
         $.ajax({
             type: "get",
             url: selectedNodeUrl,
             success: function(result) {
-                $('.post').css('background', 'none');
-                $('.post').html($(result).find('.post').html());
+                $('.post').html($(result).find('.post').html()).css('background', 'none');
                 $("#breadcrumb").html($(result).find('#breadcrumb').html());
                 $('#rightsidetoc').toc();
                 $('#rightsidetoc').toc({
