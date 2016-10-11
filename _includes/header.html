@@ -62,6 +62,17 @@ $(document).ready(function() {
 												$(".left-toc").css("background-image", "none");	
 												var dataManger = data;  
 												$(".treeview").html(data).ejTreeView();
+												
+												var linkObject = null
+												if(window.location.pathname.split('/')[2]!="api"){
+													linkObject = getObjects(data,'linkAttribute',window.location.pathname);
+												}
+												else{
+													linkObject = getObjects(data,'linkAttribute',window.location.pathname+window.location.hash);
+												}
+												
+												expand(data,linkObject);
+												onCreate();
 											}
 									});
 					{% endfor %}

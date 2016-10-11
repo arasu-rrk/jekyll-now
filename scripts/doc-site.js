@@ -498,3 +498,34 @@ function tabSelect(lang) {
         }
     })
 }
+
+function expand(data, LinkObject) {
+
+    if (LinkObject[0].pid != null) {
+        var pid = getObjects(data, 'id', LinkObject[0].pid);
+        idArray.push(pid[0].id);
+        expand(data, pid);
+    } else {
+        idArray = idArray.reverse();
+
+        for (var id in idArray) {
+            $(".treeview").ejTreeView("expandNode", $("#" + idArray[id]));
+        }
+    }
+}
+
+function getObjects(obj, key, val) {
+    var objects = [];
+
+    for (var i in obj) {
+
+        if (!obj.hasOwnProperty(i)) continue;
+        if (typeof obj[i] == 'object') {
+            objects = objects.concat(getObjects(obj[i], key, val));
+        } else if (i == key && obj[key] == val) {
+            objects.push(obj);
+        }
+
+    }
+    return objects;
+}
