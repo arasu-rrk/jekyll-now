@@ -80,6 +80,10 @@ gems:
   - syncfusion-tabs
   - syncfusion-tabs-id
 
+whitelist:
+  - syncfusion-tabs
+  - syncfusion-tabs-id
+  
 # Exclude these files from your production _site
 exclude:
   - Gemfile
