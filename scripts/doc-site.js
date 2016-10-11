@@ -212,7 +212,7 @@ $(document).on("click", ".left-toc-content a", function(event) {
 		
         $.ajax({
             type: "get",
-            url: selectedNodeUrl,
+            url: "//" + window.location.host + selectedNodeUrl,
             success: function(result) {
                 $('.post').html($(result).find('.post').html()).css('background', 'none');
                 $("#breadcrumb").html($(result).find('#breadcrumb').html());
