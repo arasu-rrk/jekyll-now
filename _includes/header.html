@@ -53,9 +53,9 @@ $(document).ready(function() {
 								$.ajax({
 									type: 'get',  		
 									{% if page.lang && page.lang != 'en-us' %}
-										url: '{{page.lang}}/{{toc}}.html',		
+										url: '{{ site.baseurl }}/{{ page.lang }}/{{ toc }}.html',		
 									{% else %}
-										url: 'en-us/{{toc}}.html',
+										url: '{{ site.baseurl }}/en-us/{{toc}}.html',
 									{% endif %}		
 									dataType: 'html',	
 									success: function(data) {
