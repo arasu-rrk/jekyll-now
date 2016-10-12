@@ -5,6 +5,7 @@ description: Efficiently organize and share dashboards through a web interface.
 platform: dashboard-platform
 documentation: ug
 lang: es-mx
+redirect_from: "/es-mx"
 ---
 
 # Overview 

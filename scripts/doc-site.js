@@ -1,4 +1,19 @@
 var selectedNodeUrl = "";
+
+function expandTableOfContents(url) {
+	var selectedNode = $(".treeview").find("a[href='"+ url +"']");
+	
+	var parentNodes = $(selectedNode).parents("li");
+	
+	var ejTree = $(".treeview").data("ejTreeView");
+
+	for (var index = 0; index < parentNodes.length; index++) {
+		ejTree.expandNode($(parentNodes)[index]);
+	}
+	
+	ejTree.selectNode($(selectedNode));
+}
+
 //Image lazy load
 function init() {
     var imgDefer = document.getElementsByTagName('img');
@@ -437,33 +452,3 @@ function tabSelect(lang) {
     })
 }
 
-function expand(data, LinkObject) {
-
-    if (LinkObject[0].pid != null) {
-        var pid = getObjects(data, 'id', LinkObject[0].pid);
-        idArray.push(pid[0].id);
-        expand(data, pid);
-    } else {
-        idArray = idArray.reverse();
-
-        for (var id in idArray) {
-            $(".treeview").ejTreeView("expandNode", $("#" + idArray[id]));
-        }
-    }
-}
-
-function getObjects(obj, key, val) {
-    var objects = [];
-
-    for (var i in obj) {
-
-        if (!obj.hasOwnProperty(i)) continue;
-        if (typeof obj[i] == 'object') {
-            objects = objects.concat(getObjects(obj[i], key, val));
-        } else if (i == key && obj[key] == val) {
-            objects.push(obj);
-        }
-
-    }
-    return objects;
-}

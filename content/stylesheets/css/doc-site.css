@@ -610,14 +610,7 @@ h6 {
     border: 0 none;
     color: #252525!important;
 }
-.left-toc .e-treeview .e-treeview-ul .e-item .node-selected,
-.left-toc .e-treeview .e-item .node-selected {
-    background: #416187!important;
-    color: #FFF!important;
-    padding: 4px 4px 4px 7px!important;
-    margin-left: 4px;
-    outline: medium none;
-}
+
 .left-toc .e-item {
     margin-bottom: 2px;
 }
@@ -625,7 +618,9 @@ h6 {
 .left-toc .e-treeview .e-treeview-ul .e-item {
     background: none!important;
     border: 0!important;
-    margin-left: 0!important;
+}
+.left-toc .e-treeview .e-treeview-ul .e-item {
+	margin-left: 0!important;
 }
 .e-treeview .e-item {
     line-height: 15px;
@@ -635,7 +630,16 @@ h6 {
 .e-treeview .e-item.first{
 	margin-top: 20px;
 }
-
+.left-toc .e-treeview .e-treeview-ul .e-item .e-text.e-active,
+.left-toc .e-treeview .e-treeview-ul .e-item .e-text.e-active:hover,
+.left-toc .e-treeview .e-treeview-ul .e-item .node-selected,
+.left-toc .e-treeview .e-item .node-selected {
+    background: #416187!important;
+    color: #FFF!important;
+    padding: 4px 4px 4px 7px!important;
+    margin-left: 4px;
+    outline: medium none;
+}
 .left-toc .e-treeview .e-treeview-ul .e-item .e-text:hover,
 .left-toc .e-treeview .e-item .e-node-hover,
 .left-toc .e-treeview .e-treeview-ul .e-item:hover {

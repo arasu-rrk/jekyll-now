@@ -138,7 +138,7 @@ This allows you to apply the specified radius to the widget corners. Value can b
 
 **Enable Comment**
 
-This allows you to enable/disable comment for dashboard widget. For more details refer [here](/dashboard-platform/dashboard-designer/compose-dashboard/commenting-dashboard-and-widget)
+This allows you to enable/disable comment for dashboard widget. For more details refer [here](/en-us/dashboard-platform/dashboard-designer/compose-dashboard/commenting-dashboard-and-widget)
 
 
 

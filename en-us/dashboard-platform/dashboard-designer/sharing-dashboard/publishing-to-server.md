@@ -74,16 +74,16 @@ Click `Cancel` to cancel the export operation and close the dialog.
 
 Data publish is required for publishing dashboards into dashboard server whose data was created through connection types other than server-based data connection types.
 
-With this, proceeding after `Publish Dashboard` dialog, the following dialog will be shown to feed the details of data server whose system requirements has been discussed [here](/dashboard-platform/dashboard-designer/system-requirements). The data server should either have Microsoft SQL Server installed or ODBC-enabled databases like SQL, MySQL or Oracle, or Spark SQL configured. 
+With this, proceeding after `Publish Dashboard` dialog, the following dialog will be shown to feed the details of data server whose system requirements has been discussed [here](/en-us/dashboard-platform/dashboard-designer/system-requirements). The data server should either have Microsoft SQL Server installed or ODBC-enabled databases like SQL, MySQL or Oracle, or Spark SQL configured. 
 
 ![](images/exportingtoserver_selectpublish.png)
    
-For data connections, other than the server typed connections such as CSV, Microsoft Excel, JSON, Salesforce, Web Data Source and Microsoft Azure Table Storage the data will be moved into the servers optionally as [SQL Server](/dashboard-platform/dashboard-designer/connecting-to-data/connecting-to-data#connecting-to-sql-server-database), [Spark SQL](/dashboard-platform/dashboard-designer/connecting-to-data/connecting-to-data#connecting-to-spark-sql-data) or ODBC-enabled databases ([MSSQL](/dashboard-platform/dashboard-designer/connecting-to-data/connecting-to-data#connecting-to-sql-server-database-through-odbc-connection), [MySQL](/dashboard-platform/dashboard-designer/connecting-to-data/connecting-to-data#connecting-to-mysql-database-through-odbc-connection) or [Oracle](/dashboard-platform/dashboard-designer/connecting-to-data/connecting-to-data#connecting-to-oracle-database-through-odbc-connection)) from the in-memory database which has been created while designing the data source.
+For data connections, other than the server typed connections such as CSV, Microsoft Excel, JSON, Salesforce, Web Data Source and Microsoft Azure Table Storage the data will be moved into the servers optionally as [SQL Server](/en-us/dashboard-platform/dashboard-designer/connecting-to-data/connecting-to-data#connecting-to-sql-server-database), [Spark SQL](/en-us/dashboard-platform/dashboard-designer/connecting-to-data/connecting-to-data#connecting-to-spark-sql-data) or ODBC-enabled databases ([MSSQL](/en-us/dashboard-platform/dashboard-designer/connecting-to-data/connecting-to-data#connecting-to-sql-server-database-through-odbc-connection), [MySQL](/en-us/dashboard-platform/dashboard-designer/connecting-to-data/connecting-to-data#connecting-to-mysql-database-through-odbc-connection) or [Oracle](/en-us/dashboard-platform/dashboard-designer/connecting-to-data/connecting-to-data#connecting-to-oracle-database-through-odbc-connection)) from the in-memory database which has been created while designing the data source.
 
 
 ## User Filter Configuration
 
-You may configure user filters to restrict data view based on user logged in. Please refer [here](/dashboard-platform/dashboard-designer/compose-dashboard/configuring-user-based-filter) for more detail.
+You may configure user filters to restrict data view based on user logged in. Please refer [here](/en-us/dashboard-platform/dashboard-designer/compose-dashboard/configuring-user-based-filter) for more detail.
 
 
 ## Public Accessibility 
@@ -94,7 +94,7 @@ N> Setting dashboard as public will disable the user based filter and other user
 
 ![](images/markaspublic.png)
 
-You can mark a dashboard as public even after publishing to dashboard server as discussed [here](/dashboard-platform/dashboard-server/administration/manage-dashboards/public-dashboards#make-public).
+You can mark a dashboard as public even after publishing to dashboard server as discussed [here](/en-us/dashboard-platform/dashboard-server/administration/manage-dashboards/public-dashboards#make-public).
 
 ## Marking as Favorite
 
@@ -102,6 +102,6 @@ You can mark a particular dashboard as favorite while publishing to a Dashboard 
 
 ![](images/markasfavorite.png)
 
-You can mark a dashboard as favorite even after publishing to dashboard server as discussed [here](/dashboard-platform/dashboard-server/administration/manage-dashboards/favorite-dashboards#mark-a-dashboard-as-favorite).
+You can mark a dashboard as favorite even after publishing to dashboard server as discussed [here](/en-us/dashboard-platform/dashboard-server/administration/manage-dashboards/favorite-dashboards#mark-a-dashboard-as-favorite).
 
 

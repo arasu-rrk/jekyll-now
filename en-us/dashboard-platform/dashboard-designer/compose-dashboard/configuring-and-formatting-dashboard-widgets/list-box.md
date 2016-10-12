@@ -84,7 +84,7 @@ Define filter criteria through `Filter(s)…` menu item in the Settings drop dow
 ![](images/ssas_listbox_1.png)
 
 
-To know more about `filters`, refer [here](/dashboard-platform/dashboard-designer/compose-dashboard/configuring-widget-filters) 
+To know more about `filters`, refer [here](/en-us/dashboard-platform/dashboard-designer/compose-dashboard/configuring-widget-filters) 
 
 Define default measure to the dropped dimension through `Default Measure` menu item to retrieve exact result for that dimension.
 
@@ -162,7 +162,7 @@ This allows you to apply the specified radius to the widget corners. Value can b
 
 **Enable Comment**
 
-This allows you to enable/disable comment for dashboard widget. For more details refer [here](/dashboard-platform/dashboard-designer/compose-dashboard/commenting-dashboard-and-widget)
+This allows you to enable/disable comment for dashboard widget. For more details refer [here](/en-us/dashboard-platform/dashboard-designer/compose-dashboard/commenting-dashboard-and-widget)
 
 
 

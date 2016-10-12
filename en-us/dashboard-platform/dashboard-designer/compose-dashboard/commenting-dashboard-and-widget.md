@@ -31,4 +31,4 @@ Once the widget tab was opened, navigate to the Properties pane and select the `
 ![](images/commenttinganddashboardwidget_commentinproperties.png)
 
 N> Image, Label and RangeNavigator widgets do not have Commenting support.
-N> You may find the commenting procedure [here](/dashboard-platform/dashboard-server/collaboration)
+N> You may find the commenting procedure [here](/en-us/dashboard-platform/dashboard-server/collaboration)

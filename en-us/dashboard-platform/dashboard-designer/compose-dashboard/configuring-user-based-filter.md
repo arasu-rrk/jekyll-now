@@ -14,7 +14,7 @@ The user information will be referred from Dashboard Server user accounts. Once 
 
 ## How to Create a User Based Filter
  
-[Login](/dashboard-platform/dashboard-designer/sharing-dashboard/connecting-to-a-server) to Syncfusion Dashboard Server from your Syncfusion Dashboard Designer Application.
+[Login](/en-us/dashboard-platform/dashboard-designer/sharing-dashboard/connecting-to-a-server) to Syncfusion Dashboard Server from your Syncfusion Dashboard Designer Application.
 
 Navigate to the `Server` menu and select `User Filter…` menu item. Now, the `User Filters` popup window opens like below.
 

@@ -13,18 +13,18 @@
 	<meta http-equiv="pragma" content="no-cache" />
 	<link href="//d2g29cya9iq7ip.cloudfront.net/documentation/styles/bootstrap.gzip.min.css" rel="stylesheet">		
 	<link href="//d2g29cya9iq7ip.cloudfront.net/documentation/styles/ej.widgets.gzip.min.css" rel="stylesheet"> 		
-	<script>document.write("<link href='{{ site.baseurl }}/content/stylesheets/css/doc-site.css?v=" + Date.now() + "'rel='stylesheet'></link>");</script> 
+	<script>document.write("<link href='/content/stylesheets/css/doc-site.css' rel='stylesheet'></link>");</script> 
 	<script src="//d2g29cya9iq7ip.cloudfront.net/documentation/scripts/documentation.gzip.min.js"></script>
 	<script>
 		if (typeof jQuery == 'undefined') {
-			document.write(unescape("%3Cscript src='{{ site.baseurl }}/scripts/documentation.gzip.js' type='text/javascript'%3E%3C/script%3E"));
+			document.write(unescape("%3Cscript src='/scripts/documentation.gzip.js' type='text/javascript'%3E%3C/script%3E"));
 		}
 	</script>
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	 <script src="//d2g29cya9iq7ip.cloudfront.net/documentation/scripts/ej.treeview.min.js"></script> 
 	<script>
 		if (typeof ej == 'undefined') {
-			document.write(unescape("%3Cscript src='{{ site.baseurl }}/script/ej.treeview.all.min.js' type='text/javascript'%3E%3C/script%3E"));
+			document.write(unescape("%3Cscript src='/script/ej.treeview.all.min.js' type='text/javascript'%3E%3C/script%3E"));
 		}
 	</script>
 	
@@ -45,52 +45,33 @@ $(document).ready(function() {
     $('#rightsidetoc ol').length ? $("#rightsidetoc").css("display","block") : $("#rightsidetoc").css("display","none");
 	{% capture documentationName %}{{include.documentation}}{% endcapture %}
 	{% assign platformName= ""%}
-{% capture platformName %}{{page.platform | downcase}}{% endcapture %}
+	{% capture platformName %}{{page.platform | downcase}}{% endcapture %}
 			{% for platform in site.data.sidebar %}
 			{% capture platformNameSidebar %}{{platform.platformname | downcase}}{% endcapture %}
 				{% if  platformNameSidebar == platformName %}
 					{% for toc in platform.jsontoc %}
 								$.ajax({
-									type: 'get',  		
-									{% if page.lang && page.lang != 'en-us' %}
-										url: '{{site.baseurl}}/{{page.lang}}/{{toc}}.html',		
-									{% else %}
-										url: '{{site.baseurl}}/en-us/{{toc}}.html',
-									{% endif %}		
+									type: 'get',  
+										{% if page.lang && page.lang != 'en-us' %}
+											url: '/{{page.lang}}/{{toc}}.html',		
+										{% else %}
+											url: '/en-us/{{toc}}.html',
+										{% endif %}
 									dataType: 'html',	
 									success: function(data) {
-												$(".left-toc").css("background-image", "none");	
-												var dataManger = data;  
-												$(".treeview").html(data).ejTreeView();
-												
-												var toc = $("li[role=treeitem]").find("a");
-												
-												for(var i = 0; i < toc.length; i++){
-													var href = $(toc[i]).attr("href");
-													
-													if(toc[i].attributes.getNamedItem("href") !== null)
-														$(toc[i]).attr("href", $("body").data("baseurl") + $(toc[i]).attr("href"));
-												}
-												
-												var linkObject = null
-												if(window.location.pathname.split('/')[2]!="api"){
-													linkObject = getObjects(data,'linkAttribute',window.location.pathname);
-												}
-												else{
-													linkObject = getObjects(data,'linkAttribute',window.location.pathname+window.location.hash);
-												}
-												
-												expand(data,linkObject);
-												onCreate();
-											}
-									});
+										$(".left-toc").css("background-image", "none");	 
+										$(".treeview").html(data).ejTreeView();										
+										expandTableOfContents(window.location.pathname);
+										onCreate();
+									}
+								});
 					{% endfor %}
 				{% endif %}
 			{% endfor %}
-});
+	});
 </script>
 <script src="//d2g29cya9iq7ip.cloudfront.net/scripts/components/essentialjs/ej.dialogall.min.js"></script>
-<script>document.write("<script type='text/javascript' src='{{ site.baseurl }}/scripts/doc-site.js?v=" + Date.now() + "'><\/script>");</script> 
+<script>document.write("<script type='text/javascript' src='/scripts/doc-site.js'><\/script>");</script> 
 
 </head>
 
@@ -161,7 +142,11 @@ $(document).ready(function() {
 			<div class="lang-area">
 				<select id="site-language">
 					{% for lang in site.data.languages %}
-						<option value="{{site.baseurl}}/{{lang.shortname}}">{{lang.displayname}}</option>		
+						{% if page.lang == lang.shortname %}
+							<option value="{{lang.shortname}}" selected>{{lang.displayname}}</option>		
+						{% else %}
+							<option value="{{lang.shortname}}">{{lang.displayname}}</option>		
+						{% endif %}
 					{% endfor %}
 				</select>
 			</div>

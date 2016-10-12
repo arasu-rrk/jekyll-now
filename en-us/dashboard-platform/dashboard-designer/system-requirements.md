@@ -85,15 +85,15 @@ A data server, an optional one which can be either the local machine itself or a
 
 <tr>
 <td>ODBC Connection</td>
-<td>For SQL, any one of the following drivers need to be installed and database need to be setup as discussed  {{ '[here](/dashboard-platform/dashboard-designer/connecting-to-data/connecting-to-data#setting-up-an-odbc-enabled-sql-server-database)' | markdownify }}
+<td>For SQL, any one of the following drivers need to be installed and database need to be setup as discussed  {{ '[here](/en-us/dashboard-platform/dashboard-designer/connecting-to-data/connecting-to-data#setting-up-an-odbc-enabled-sql-server-database)' | markdownify }}
  
 <li>SQL Native Client </li>
 <li>SQL Server Native Client 10.0</li>
 <br></br>
-For MySQL, the following driver need to be installed and database need to be setup as discussed {{ '[here](/dashboard-platform/dashboard-designer/connecting-to-data/connecting-to-data#setting-up-an-odbc-enabled-mysql-database)' | markdownify }}
+For MySQL, the following driver need to be installed and database need to be setup as discussed {{ '[here](/en-us/dashboard-platform/dashboard-designer/connecting-to-data/connecting-to-data#setting-up-an-odbc-enabled-mysql-database)' | markdownify }}
 <li>MySQL ODBC 5.3 Unicode Driver</li>
 <br></br>
-For Oracle, any one of the following drivers need to be installed and database need to be setup as discussed {{ '[here](/dashboard-platform/dashboard-designer/connecting-to-data/connecting-to-data#setting-up-an-odbc-enabled-oracle-database)' | markdownify }}
+For Oracle, any one of the following drivers need to be installed and database need to be setup as discussed {{ '[here](/en-us/dashboard-platform/dashboard-designer/connecting-to-data/connecting-to-data#setting-up-an-odbc-enabled-oracle-database)' | markdownify }}
 <li>Microsoft ODBC for Oracle</li>
 <li>Oracle in OraClient 11g_home1</li>
 <br></br>

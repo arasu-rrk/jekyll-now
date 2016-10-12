@@ -20,7 +20,7 @@ documentation: ug
    
    ![](images/dashboardpreview.png)
    
-   You can preview and interact the dashboard only if dashboard service is running in web development server in parallel. This service get started as discussed [here](/dashboard-platform/dashboard-designer/installation#hosting-dashboard-service-in-iis-express).
+   You can preview and interact the dashboard only if dashboard service is running in web development server in parallel. This service get started as discussed [here](/en-us/dashboard-platform/dashboard-designer/installation#hosting-dashboard-service-in-iis-express).
    
    Dashboard Viewer can be split into two sections: `Title` and `Content`, like below.
    

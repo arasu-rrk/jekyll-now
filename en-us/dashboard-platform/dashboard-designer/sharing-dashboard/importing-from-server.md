@@ -34,7 +34,7 @@ Click `Download & Open` to download the selected dashboard and open in the dashb
 
 Click `Close` to close the dialog.
 
-[Save](/dashboard-platform/dashboard-designer/compose-dashboard/saving-a-dashboard) this dashboard in your local machine at your preferred location with a suitable name in SYDX format.
+[Save](/en-us/dashboard-platform/dashboard-designer/compose-dashboard/saving-a-dashboard) this dashboard in your local machine at your preferred location with a suitable name in SYDX format.
 
 ### Importing Data source from Server
 

@@ -28,7 +28,7 @@ The following software requirements are necessary to run the Dashboard Server:
 * [Microsoft .NET Framework 4.5](https://www.microsoft.com/en-in/download/details.aspx?id=30653)
 * Microsoft SQL Server 2005+ \| Azure SQL Database \| Oracle \| MySQL
 * [Internet Information Services (IIS) 7.0+](https://en.wikipedia.org/wiki/Internet_Information_Services) \| [Microsoft Azure](https://azure.microsoft.com/en-in/documentation/articles/app-service-value-prop-what-is)
-* [SMTP Mail Server](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol) (Check [Email Settings](/dashboard-platform/dashboard-server/site-settings/email-settings) for more details)
+* [SMTP Mail Server](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol) (Check [Email Settings](/en-us/dashboard-platform/dashboard-server/site-settings/email-settings) for more details)
 
 ### Supported Operating Systems
 
@@ -70,9 +70,9 @@ The following minimum software requirements are necessary in a data server (can 
 * `PostgreSQL` – PostgreSQL Server 9.x+
 * `Spark SQL` - [Syncfusion Big Data Cluster Manager](https://www.syncfusion.com/downloads/bigdata) (Spark Server should be started through Service Manager after installation. It will be running on port 10001 by default.) 
 * `Hive` - [Syncfusion Big Data Cluster Manager](https://www.syncfusion.com/downloads/bigdata) (Hive Server should be started through Service Manager after installation. It will be running on port 10000 by default.) 
-* `SQL through ODBC Connection` - SQL Native Client or SQL Server Native Client 10.0 ( Any one of the these drivers need to be installed and database need to be setup as discussed [here](/dashboard-platform/dashboard-designer/connecting-to-data/connecting-to-data#setting-up-an-odbc-enabled-sql-server-database)).             
-* `MSSQL through ODBC Connection` -  MySQL ODBC 5.3 Unicode Driver (The driver need to be installed and database need to be setup as discussed [here](/dashboard-platform/dashboard-designer/connecting-to-data/connecting-to-data#setting-up-an-odbc-enabled-mysql-database)).                 
-* `ODBC Connection through ORACLE` - Microsoft ODBC for Oracle or  Oracle in OraClient 11g_home1 (Any one of the these drivers need to be installed and database need to be setup as discussed [here](/dashboard-platform/dashboard-designer/connecting-to-data/connecting-to-data#setting-up-an-odbc-enabled-oracle-database)).
+* `SQL through ODBC Connection` - SQL Native Client or SQL Server Native Client 10.0 ( Any one of the these drivers need to be installed and database need to be setup as discussed [here](/en-us/dashboard-platform/dashboard-designer/connecting-to-data/connecting-to-data#setting-up-an-odbc-enabled-sql-server-database)).             
+* `MSSQL through ODBC Connection` -  MySQL ODBC 5.3 Unicode Driver (The driver need to be installed and database need to be setup as discussed [here](/en-us/dashboard-platform/dashboard-designer/connecting-to-data/connecting-to-data#setting-up-an-odbc-enabled-mysql-database)).                 
+* `ODBC Connection through ORACLE` - Microsoft ODBC for Oracle or  Oracle in OraClient 11g_home1 (Any one of the these drivers need to be installed and database need to be setup as discussed [here](/en-us/dashboard-platform/dashboard-designer/connecting-to-data/connecting-to-data#setting-up-an-odbc-enabled-oracle-database)).
           
 ## Dashboard Platform SDK
 
@@ -100,9 +100,9 @@ The following minimum software requirements are necessary in a data server (can 
 * `PostgreSQL` – PostgreSQL Server 9.x+
 * `Spark SQL` - [Syncfusion Big Data Cluster Manager](https://www.syncfusion.com/downloads/bigdata) (Spark Server should be started through Service Manager after installation. It will be running on port 10001 by default.) 
 * `Hive` - [Syncfusion Big Data Cluster Manager](https://www.syncfusion.com/downloads/bigdata) (Hive Server should be started through Service Manager after installation. It will be running on port 10000 by default.) 
-* `SQL through ODBC Connection` - SQL Native Client or SQL Server Native Client 10.0 ( Any one of the these drivers need to be installed and database need to be setup as discussed [here](/dashboard-platform/dashboard-designer/connecting-to-data/connecting-to-data#setting-up-an-odbc-enabled-sql-server-database)).             
-* `MSSQL through ODBC Connection` -  MySQL ODBC 5.3 Unicode Driver (The driver need to be installed and database need to be setup as discussed [here](/dashboard-platform/dashboard-designer/connecting-to-data/connecting-to-data#setting-up-an-odbc-enabled-mysql-database)).                 
-* `ODBC Connection through ORACLE` - Microsoft ODBC for Oracle or  Oracle in OraClient 11g_home1 (Any one of the these drivers need to be installed and database need to be setup as discussed [here](/dashboard-platform/dashboard-designer/connecting-to-data/connecting-to-data#setting-up-an-odbc-enabled-oracle-database)).
+* `SQL through ODBC Connection` - SQL Native Client or SQL Server Native Client 10.0 ( Any one of the these drivers need to be installed and database need to be setup as discussed [here](/en-us/dashboard-platform/dashboard-designer/connecting-to-data/connecting-to-data#setting-up-an-odbc-enabled-sql-server-database)).             
+* `MSSQL through ODBC Connection` -  MySQL ODBC 5.3 Unicode Driver (The driver need to be installed and database need to be setup as discussed [here](/en-us/dashboard-platform/dashboard-designer/connecting-to-data/connecting-to-data#setting-up-an-odbc-enabled-mysql-database)).                 
+* `ODBC Connection through ORACLE` - Microsoft ODBC for Oracle or  Oracle in OraClient 11g_home1 (Any one of the these drivers need to be installed and database need to be setup as discussed [here](/en-us/dashboard-platform/dashboard-designer/connecting-to-data/connecting-to-data#setting-up-an-odbc-enabled-oracle-database)).
 
                      
 	 

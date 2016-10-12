@@ -409,7 +409,7 @@ This allows you to define this funnel chart widget to ignore responding to the f
 
 ![](images/funnelchart_img45.png)
 
-To configure the linking to URL or dashboard with the widget through its settings. For more details, refer [Linking](/dashboard-platform/dashboard-designer/compose-dashboard/linking-urls-and-dashboards).
+To configure the linking to URL or dashboard with the widget through its settings. For more details, refer [Linking](/en-us/dashboard-platform/dashboard-designer/compose-dashboard/linking-urls-and-dashboards).
 
 **Container Settings**
 
@@ -449,7 +449,7 @@ This allows you to enable/disable the image export option for this funnel chart 
 
 **Enable Comment**
 
-This allows you to enable/disable comment for dashboard widget. For more details refer [here](/dashboard-platform/dashboard-designer/compose-dashboard/commenting-dashboard-and-widget)
+This allows you to enable/disable comment for dashboard widget. For more details refer [here](/en-us/dashboard-platform/dashboard-designer/compose-dashboard/commenting-dashboard-and-widget)
 
 
 

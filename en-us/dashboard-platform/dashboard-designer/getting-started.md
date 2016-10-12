@@ -68,11 +68,11 @@ The data type of the each column will be represented nearby like below:
 
 ![](images/datatypeicon.png)
 
-Add more than one table, if you prefer, through following same drag `n` drop operation. This is subjected to [joining](/dashboard-platform/dashboard-designer/transforming-data/joining-table) of tables.
+Add more than one table, if you prefer, through following same drag `n` drop operation. This is subjected to [joining](/en-us/dashboard-platform/dashboard-designer/transforming-data/joining-table) of tables.
 
 ## Transforming Data
 
-[Rename](/dashboard-platform/dashboard-designer/transforming-data/formatting-column) the column as required, either through the option exposed in `Settings` drop down menu or double-clicking the column to enable the edit mode.
+[Rename](/en-us/dashboard-platform/dashboard-designer/transforming-data/formatting-column) the column as required, either through the option exposed in `Settings` drop down menu or double-clicking the column to enable the edit mode.
 
 ![](images/columnsettings.png)
 
@@ -86,11 +86,11 @@ Handle column type conversion, if required, through clicking the `Settings` icon
 
 ![](images/changecolumntype.png)
 
-For supported column types and their equivalent convertible types, you can refer [Formatting Columns](/dashboard-platform/dashboard-designer/transforming-data/formatting-column). 
+For supported column types and their equivalent convertible types, you can refer [Formatting Columns](/en-us/dashboard-platform/dashboard-designer/transforming-data/formatting-column). 
 
-Add [expression columns](/dashboard-platform/dashboard-designer/transforming-data/configuring-expression-columns) that you desire, through creating it using built-in functions and existing columns.
+Add [expression columns](/en-us/dashboard-platform/dashboard-designer/transforming-data/configuring-expression-columns) that you desire, through creating it using built-in functions and existing columns.
 
-Filter out the data that don’t require to be considered into dashboard through the [data filters](/dashboard-platform/dashboard-designer/transforming-data/configuring-data-filters) option in the tools pane in data design view highlighted below.
+Filter out the data that don’t require to be considered into dashboard through the [data filters](/en-us/dashboard-platform/dashboard-designer/transforming-data/configuring-data-filters) option in the tools pane in data design view highlighted below.
 
 ![](images/addfilters.png)
 
@@ -164,7 +164,7 @@ Now the widget preview will look like below.
 
 ![](images/datasrendering.png)
 
-Click the `Settings` icon (highlighted) to open the [aggregation type](/dashboard-platform/dashboard-designer/compose-dashboard/aggregating-value-columns-based-on-type) dropdown list.
+Click the `Settings` icon (highlighted) to open the [aggregation type](/en-us/dashboard-platform/dashboard-designer/compose-dashboard/aggregating-value-columns-based-on-type) dropdown list.
 
 ![](images/settingsicon.png)
 
@@ -198,7 +198,7 @@ Now the `Measure Formatting` dialog will open like below.
 
 Make necessary changes and click `OK` to save changes you made since opening this dialog; Click `Cancel` to cancel your unsaved changes and close the dialog.
 
-Apply filtering to the dropped measure type or dimension type column(s), if required through [Measure Filter](/dashboard-platform/dashboard-designer/compose-dashboard/configuring-widget-filters#configuring-filter-for-measure-column) and [Filters](/dashboard-platform/dashboard-designer/compose-dashboard/configuring-widget-filters#configuring-filter-for-dimension-column) dialogs respectively, to filter out the data from getting bounded to widget that doesn’t meet filter criteria, which you define.  
+Apply filtering to the dropped measure type or dimension type column(s), if required through [Measure Filter](/en-us/dashboard-platform/dashboard-designer/compose-dashboard/configuring-widget-filters#configuring-filter-for-measure-column) and [Filters](/en-us/dashboard-platform/dashboard-designer/compose-dashboard/configuring-widget-filters#configuring-filter-for-dimension-column) dialogs respectively, to filter out the data from getting bounded to widget that doesn’t meet filter criteria, which you define.  
 
 ## Configuring Properties to Widget
 
@@ -216,11 +216,11 @@ Click the `Settings` icon at top right corner of the widget. Now, focus will mov
 
 ![](images/settingsiconwithwidget.png)
 
-This pane holds some general settings and some specific to the widget. Configure your desired settings. Refer [Properties Configuration](/dashboard-platform/dashboard-designer/compose-dashboard/configuring-and-formatting-dashboard-widgets) widget-wise for more details.
+This pane holds some general settings and some specific to the widget. Configure your desired settings. Refer [Properties Configuration](/en-us/dashboard-platform/dashboard-designer/compose-dashboard/configuring-and-formatting-dashboard-widgets) widget-wise for more details.
 
 Add more widgets that you require following the same procedure.
 
-Once you are done with the dashboard, [save](/dashboard-platform/dashboard-designer/compose-dashboard/saving-a-dashboard) the dashboard in local as SYDX formatted file.
+Once you are done with the dashboard, [save](/en-us/dashboard-platform/dashboard-designer/compose-dashboard/saving-a-dashboard) the dashboard in local as SYDX formatted file.
 
 Click Preview at tools pane at top right to see the dashboard preview launched in web browser page.
 
@@ -232,7 +232,7 @@ Now, the dashboard preview can be visualized through the built-in dashboard view
 
 ## Sharing Dashboard
 
-[Publish](/dashboard-platform/dashboard-designer/sharing-dashboard) the created dashboard to dashboard server through authorized publish access from Dashboard Designer.
+[Publish](/en-us/dashboard-platform/dashboard-designer/sharing-dashboard) the created dashboard to dashboard server through authorized publish access from Dashboard Designer.
 
 
 

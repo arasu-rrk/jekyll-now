@@ -194,7 +194,7 @@ This allows you to define this bubble map widget to ignore responding to the fil
 
 **Link Settings**
 
-You can enable linking and configure to navigate either to a published dashboard URL or to a general URL with or without parameters. For more details, refer [Linking](/dashboard-platform/dashboard-designer/compose-dashboard/linking-urls-and-dashboards). 
+You can enable linking and configure to navigate either to a published dashboard URL or to a general URL with or without parameters. For more details, refer [Linking](/en-us/dashboard-platform/dashboard-designer/compose-dashboard/linking-urls-and-dashboards). 
 
 **Container Appearance**
 
@@ -234,7 +234,7 @@ This allows you to enable/disable the image export option for this bubble map wi
 
 **Enable Comment**
 
-This allows you to enable/disable comment for dashboard widget. For more details refer [here](/dashboard-platform/dashboard-designer/compose-dashboard/commenting-dashboard-and-widget)
+This allows you to enable/disable comment for dashboard widget. For more details refer [here](/en-us/dashboard-platform/dashboard-designer/compose-dashboard/commenting-dashboard-and-widget)
 
 **Map Settings**   
 
