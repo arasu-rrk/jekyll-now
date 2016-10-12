@@ -60,7 +60,9 @@ $(document).ready(function() {
 									dataType: 'html',	
 									success: function(data) {
 										$(".left-toc").css("background-image", "none");	 
-										$(".treeview").html(data).ejTreeView();										
+										$(".treeview").html(data).ejTreeView({
+											nodeClick: "onNodeSelect"
+										});										
 										expandTableOfContents(window.location.pathname);
 										onCreate();
 									}

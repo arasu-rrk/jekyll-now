@@ -43,8 +43,6 @@ function premalink() {
 // Expanding tree on page load
 function onCreate(args) {
     var lastSegment = window.location.pathname;
-
-	lastSegment = lastSegment.substring(0, lastSegment.length - 1);
 	
     var hashUrl = location.hash;
     if (!(lastSegment.indexOf('api') === -1) && hashUrl != "" && hashUrl != undefined) {
@@ -91,9 +89,6 @@ function onload() {
     });
 
     var urlParameter = window.location.pathname.split('/');
-
-    $("#site-language").find("option[value=" + urlParameter[1] + "]").prop("selected", true);
-
 }
 
 //window.onload = onload;
@@ -287,19 +282,17 @@ function scrollTopElement() {
 
 // single click tree view node select
 
-function onNodeSelect(element) {
+function onNodeSelect(args) {
     var tree = $('.treeview').data('ejTreeView');
-    if (element.find('> ul .e-item').length == 0) {
-        tree._createChildNodesWhenExpand(element);
-    } else {
-        if (tree) {
-            if (tree.isExpanded(element))
-                tree.collapseNode(element);
-            else
-                tree.expandNode(element);
-            element.find('.e-active').removeClass('e-active');
-        }
-    }
+    var element = $(args.currentElement);
+	
+	if (tree) {
+		if (tree.isExpanded(element))
+			tree.collapseNode(element);
+		else
+			tree.expandNode(element);
+		element.find('.e-active').removeClass('e-active');
+	}
 }
 
 function setSearchPopupHeight() {
