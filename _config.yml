@@ -30,8 +30,6 @@ baseurl: "/jekyll-now"
 
 permalink: /:title
 
-relative_permalinks: true
-
 # The release of Jekyll Now that you're using
 version: v1.2.0
 
